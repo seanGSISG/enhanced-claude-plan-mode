@@ -529,7 +529,14 @@ const App: React.FC = () => {
             >
               <span className="text-sm font-semibold tracking-tight">Plannotator</span>
             </a>
-            <span className="text-xs text-muted-foreground font-mono opacity-60 hidden md:inline">v{typeof __APP_VERSION__ !== 'undefined' ? __APP_VERSION__ : '0.0.0'}</span>
+            <a
+              href="https://github.com/backnotprop/plannotator/releases"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-muted-foreground font-mono opacity-60 hidden md:inline hover:opacity-100 transition-opacity"
+            >
+              v{typeof __APP_VERSION__ !== 'undefined' ? __APP_VERSION__ : '0.0.0'}
+            </a>
             {origin && (
               <span className={`text-[10px] px-1.5 py-0.5 rounded font-medium hidden md:inline ${
                 origin === 'claude-code'
